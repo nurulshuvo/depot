@@ -1,0 +1,6 @@
+class StoreController < ApplicationController
+  def index
+  	@count=action_count
+  	@products=Product.order(:title)
+  end
+end
